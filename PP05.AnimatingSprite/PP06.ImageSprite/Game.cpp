@@ -7,7 +7,7 @@ bool Game::init(const char*title, int xpos, int ypos,
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0)
 	{
-		m_pWindow = SDL_CreateWindow("PP05.AnimatingSprite",
+		m_pWindow = SDL_CreateWindow("PP06.ImageSprite",
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
 			640, 480, SDL_WINDOW_SHOWN);
