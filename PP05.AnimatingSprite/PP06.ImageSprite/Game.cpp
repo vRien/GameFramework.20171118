@@ -1,5 +1,5 @@
 #include"Game.h"
-#include <SDL_image.h>
+#include"SDL_image.h"
 #include <iostream>
 
 bool Game::init(const char*title, int xpos, int ypos,
@@ -7,15 +7,20 @@ bool Game::init(const char*title, int xpos, int ypos,
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0)
 	{
-		m_pWindow = SDL_CreateWindow("PP06.ImageSprite",
-			SDL_WINDOWPOS_CENTERED,
-			SDL_WINDOWPOS_CENTERED,
-			640, 480, SDL_WINDOW_SHOWN);
-		SDL_Surface*pTempSurface = IMG_Load("./assets/animate.png");
-		m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
+		m_pWindow = SDL_CreateWindow(title, xpos, ypos, width, height, SDL_WINDOW_SHOWN);
+		if (m_pWindow != 0)
+		{
+			m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
+		}
 
+		m_bRunning = true;
+
+		 //SDL_Surface* pTempSurface = SDL_LoadBMP("./Assets/animate.bmp");
+		SDL_Surface* pTempSurface = IMG_Load("./Assets/animate.png");
+
+		m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer,
+			pTempSurface);
 		SDL_FreeSurface(pTempSurface);
-		SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
 
 		m_sourceRectangle.w = 128;
 		m_sourceRectangle.h = 82;
@@ -24,12 +29,18 @@ bool Game::init(const char*title, int xpos, int ypos,
 		m_destinationRectangle.y = m_sourceRectangle.y = 0;
 		m_destinationRectangle.w = m_sourceRectangle.w;
 		m_destinationRectangle.h = m_sourceRectangle.h;
+
+
+		SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
+
+
 	}
 	else {
-		return false;
+		return false; // sdl could not initialize
 	}
-	m_bRunning = true;
 	return true;
+
+
 }
 
 void Game::render()
