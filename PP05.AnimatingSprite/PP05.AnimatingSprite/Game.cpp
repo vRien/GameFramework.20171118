@@ -10,9 +10,14 @@ bool Game::init(const char*title, int xpos, int ypos,
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
 			640, 480, SDL_WINDOW_SHOWN);
-		SDL_Surface*pTempSurface = SDL_LoadBMP("./assets/animate.bmp");
-		m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
 
+		if (m_pWindow != 0) {
+			m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
+		}
+
+		SDL_Surface* pTempSurface = SDL_LoadBMP("./Assets/animate.bmp");
+		m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer,
+			pTempSurface);
 		SDL_FreeSurface(pTempSurface);
 
 		m_sourceRectangle.w = 128;
