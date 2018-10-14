@@ -1,0 +1,20 @@
+﻿Game.obj : error LNK2019: SDL_CreateWindow 외부 기호(참조 위치: "public: bool __cdecl Game::init(char const *,int,int,int,int,bool)" (?init@Game@@QEAA_NPEBDHHHH_N@Z) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_DestroyWindow 외부 기호(참조 위치: "public: void __cdecl Game::clean(void)" (?clean@Game@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_PollEvent 외부 기호(참조 위치: "public: void __cdecl Game::handleEvents(void)" (?handleEvents@Game@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_CreateRenderer 외부 기호(참조 위치: "public: bool __cdecl Game::init(char const *,int,int,int,int,bool)" (?init@Game@@QEAA_NPEBDHHHH_N@Z) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_SetRenderDrawColor 외부 기호(참조 위치: "public: bool __cdecl Game::init(char const *,int,int,int,int,bool)" (?init@Game@@QEAA_NPEBDHHHH_N@Z) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_RenderClear 외부 기호(참조 위치: "public: void __cdecl Game::render(void)" (?render@Game@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_RenderPresent 외부 기호(참조 위치: "public: void __cdecl Game::render(void)" (?render@Game@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_DestroyRenderer 외부 기호(참조 위치: "public: void __cdecl Game::clean(void)" (?clean@Game@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_GetTicks 외부 기호(참조 위치: "public: void __cdecl Game::update(void)" (?update@Game@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_Init 외부 기호(참조 위치: "public: bool __cdecl Game::init(char const *,int,int,int,int,bool)" (?init@Game@@QEAA_NPEBDHHHH_N@Z) 함수)에서 확인하지 못했습니다.
+Game.obj : error LNK2019: SDL_Quit 외부 기호(참조 위치: "public: void __cdecl Game::clean(void)" (?clean@Game@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+TextureManager.obj : error LNK2019: SDL_FreeSurface 외부 기호(참조 위치: "public: bool __cdecl TextureManager::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct SDL_Renderer *)" (?load@TextureManager@@QEAA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0PEAUSDL_Renderer@@@Z) 함수)에서 확인하지 못했습니다.
+TextureManager.obj : error LNK2019: SDL_CreateTextureFromSurface 외부 기호(참조 위치: "public: bool __cdecl TextureManager::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct SDL_Renderer *)" (?load@TextureManager@@QEAA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0PEAUSDL_Renderer@@@Z) 함수)에서 확인하지 못했습니다.
+TextureManager.obj : error LNK2019: SDL_RenderCopyEx 외부 기호(참조 위치: "public: void __cdecl TextureManager::draw(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,int,int,int,struct SDL_Renderer *,enum SDL_RendererFlip)" (?draw@TextureManager@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHHHPEAUSDL_Renderer@@W4SDL_RendererFlip@@@Z) 함수)에서 확인하지 못했습니다.
+TextureManager.obj : error LNK2019: IMG_Load 외부 기호(참조 위치: "public: bool __cdecl TextureManager::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct SDL_Renderer *)" (?load@TextureManager@@QEAA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0PEAUSDL_Renderer@@@Z) 함수)에서 확인하지 못했습니다.
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: WinMain 외부 기호(참조 위치: "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 함수)에서 확인하지 못했습니다.
+C:\Users\kuda3\Desktop\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x86\SDL2.lib : warning LNK4272: 'x86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
+C:\Users\kuda3\Desktop\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x86\SDL2main.lib : warning LNK4272: 'x86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
+C:\Users\kuda3\Desktop\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x86\SDL2_image.lib : warning LNK4272: 'x86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
+C:\Users\kuda3\Source\Repos\vRien\GameFramework.20171118\GameFramework.20171118-master\PP07.TextureManager\x64\Debug\PP07.TextureManager.exe : fatal error LNK1120: 16개의 확인할 수 없는 외부 참조입니다.

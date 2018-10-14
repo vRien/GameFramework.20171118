@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP07.TextureManager", "PP07.TextureManager\PP07.TextureManager.vcxproj", "{E1146469-7BAB-4A84-907E-9E1AB54DF448}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP07.TextureManager", "PP07.TextureManager.vcxproj", "{E1146469-7BAB-4A84-907E-9E1AB54DF448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {774D9784-3583-41CF-A942-A9AE2C0D7E4F}
+		SolutionGuid = {5CFEFB4C-1F8A-4324-9CE8-31F4470C4FD0}
 	EndGlobalSection
 EndGlobal
