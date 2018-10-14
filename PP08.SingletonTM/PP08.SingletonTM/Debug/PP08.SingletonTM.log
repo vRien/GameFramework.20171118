@@ -1,0 +1,6 @@
+﻿  Game.cpp
+  TextureManager.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
+Game.obj : error LNK2001: "private: static class TextureManager * TextureManager::s_pInstance" (?s_pInstance@TextureManager@@0PAV1@A) 외부 기호를 확인할 수 없습니다.
+C:\Users\kuda3\source\repos\vRien\GameFramework.20171118\PP08.SingletonTM\Debug\PP08.SingletonTM.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
