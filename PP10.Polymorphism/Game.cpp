@@ -14,22 +14,33 @@ bool Game::init(const char* title, int xpos, int ypos,
 
 		m_bRunning = true;
 
-		if (!TheTextureManager::Instance()->load("assets/animate-alpha.png", "animate", m_pRenderer))
+		if (!TheTextureManager::Instance()->load("assets/a.png", "a", m_pRenderer))
+		{
+			return false;
+		}
+		if (!TheTextureManager::Instance()->load("assets/girl.png", "girl", m_pRenderer))
+		{
+			return false;
+		}		
+		if (!TheTextureManager::Instance()->load("assets/greenman.png", "greenman", m_pRenderer))
 		{
 			return false;
 		}
 		//m_go.load(100, 100, 128, 82, "animate");
 		//m_player.load(300, 300, 128, 82, "animate");
-		m_go = new GameObject();
-		m_player = new Player();
+		m_monster = new Monster();
+		m_monster2 = new GameObject();
+		//m_player = new Player();
 		m_enemy = new Enemy();
 
-		m_go->load(100, 100, 128, 82, "animate");
-		m_player->load(300, 300, 128, 82, "animate");
-		m_enemy->load(0, 0, 128, 82, "animate");
+		m_monster->load(100, 100, 256, 256, "girl");
+		m_monster2->load(300, 300, 119, 82, "a");
+		//m_player->load(300, 300, 119, 82, "a");
+		m_enemy->load(0, 0, 128, 128, "greenman");
 
-		m_gameObjects.push_back(m_go);
-		m_gameObjects.push_back(m_player);
+		m_gameObjects.push_back(m_monster);
+		m_gameObjects.push_back(m_monster2);
+		//m_gameObjects.push_back(m_player);
 		m_gameObjects.push_back(m_enemy);
 	}
 	else {

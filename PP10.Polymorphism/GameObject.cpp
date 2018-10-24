@@ -21,5 +21,33 @@ void GameObject::draw(SDL_Renderer* pRenderer)
 
 void GameObject::update()
 {
-	m_x += 1;
+	if (x == true)
+	{
+		if (m_x == 0 || m_x < 500)
+		{
+			m_x += speed();
+			if (m_x == 500)
+			{
+				x = false;
+			}
+		}
+	}
+	if (x == false)
+	{
+		if (m_x == 500 || m_x >= 0)
+		{
+			m_x -= speed();
+			if (m_x == 0)
+			{
+				x = true;
+			}
+		}
+	}
+	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+}
+
+int GameObject::speed()
+{
+	sp = 1;
+	return sp;
 }
