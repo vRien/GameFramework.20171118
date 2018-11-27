@@ -1,0 +1,43 @@
+﻿  Enemy.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Game.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  InputHandler.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\inputhandler.cpp(64): warning C4244: '인수': 'Sint32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\inputhandler.cpp(65): warning C4244: '인수': 'Sint32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MenuButton.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MenuState.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\menustate.cpp(12): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\menustate.cpp(20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\menustate.cpp(54): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Player.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SDLGameObject.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TextureManager.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(9): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(11): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\source\repos\gameframework.20171118\pp16.menustate\loaderparams.h(12): warning C4244: 'return': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  PP16.MenuState.vcxproj -> C:\Users\user\source\repos\GameFramework.20171118\PP16.MenuState\Debug\PP16.MenuState.exe
