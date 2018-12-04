@@ -14,7 +14,7 @@ public:
 	Vector2D& getPosition() { return m_position; }
 	int getWidth() { return m_width; }
 	int getHeight() { return m_height; }
-	int m_numFrames;
+	int m_numFrames = 2;
 protected:
 	Vector2D m_position;
 	Vector2D m_velocity;
