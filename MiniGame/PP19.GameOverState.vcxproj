@@ -23,6 +23,7 @@
     <ProjectGuid>{D4F21DD7-E412-47B6-951A-35C8345DBBF9}</ProjectGuid>
     <RootNamespace>PP19GameOverState</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>MiniGame</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -133,6 +134,7 @@
     <ClCompile Include="AnimatedGraphic.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameClearState.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameOverState.cpp" />
     <ClCompile Include="GameStateMachine.cpp" />
@@ -143,6 +145,7 @@
     <ClCompile Include="PauseState.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayState.cpp" />
+    <ClCompile Include="Score.cpp" />
     <ClCompile Include="SDLGameObject.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
@@ -150,6 +153,7 @@
     <ClInclude Include="AnimatedGraphic.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameClearState.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameOverState.h" />
     <ClInclude Include="GameState.h" />
@@ -161,6 +165,7 @@
     <ClInclude Include="PauseState.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayState.h" />
+    <ClInclude Include="Score.h" />
     <ClInclude Include="SDLGameObject.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Vector2D.h" />
