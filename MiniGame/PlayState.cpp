@@ -84,7 +84,6 @@ void PlayState::update()
 		TheGame::Instance()->getStateMachine()->changeState(new GameClearState());
 		return;
 	}
-	//만약에 구를 먹고 해당 위치로 갔을때 게임 클리어
 }
 
 void PlayState::render()
@@ -114,7 +113,7 @@ bool PlayState::onEnter()
 	GameObject* enemy = new Enemy(
 		new LoaderParams(100, 100, 128, 55, "helicopter2"));
 	GameObject* score = new Score(
-		new LoaderParams(0, 400, 35, 35, "score"));
+		new LoaderParams(200, 200, 35, 35, "score"));
 	m_gameObjects.push_back(player);
 	m_gameObjects.push_back(enemy);
 	m_gameObjects.push_back(score);
