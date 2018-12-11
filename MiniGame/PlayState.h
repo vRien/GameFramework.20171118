@@ -11,7 +11,6 @@ public:
 	virtual bool onEnter();
 	virtual bool onExit();
 	virtual bool checkCollision(SDLGameObject* p1, SDLGameObject* p2);
-	virtual bool checkboolCollision(SDLGameObject* p1, SDLGameObject* p2);
 	virtual std::string getStateID() const { return s_playID; }
 	
 	static PlayState* Instance()
