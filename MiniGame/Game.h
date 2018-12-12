@@ -54,9 +54,9 @@ private:
 
 	std::vector<GameObject*> m_gameObjects;
 
-	GameObject* m_player;
+	/*GameObject* m_player;
 	GameObject* m_enemy;
-	GameObject* m_score;
+	GameObject* m_score;*/
 
 	GameStateMachine* m_pGameStateMachine;
 

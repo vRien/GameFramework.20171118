@@ -4,7 +4,6 @@
 class Score : public SDLGameObject
 {
 private:
-	void handleInput();
 
 public:
 	Score(const LoaderParams* pParams);

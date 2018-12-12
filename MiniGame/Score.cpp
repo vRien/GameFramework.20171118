@@ -37,16 +37,6 @@ void Score::update()
 	SDLGameObject::update();
 }
 
-void Score::handleInput()
-{
-	if (TheInputHandler::Instance()->getMouseButtonState(LEFT))
-	{
-		m_velocity.setX(1);
-	}
-
-	Vector2D* vec = TheInputHandler::Instance()->getMousePosition();
-	m_velocity = (*vec - m_position) / 100.0f;
-}
 void Score::clean()
 {
 }
