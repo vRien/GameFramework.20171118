@@ -6,7 +6,7 @@
 Score::Score(const LoaderParams* pParams) : SDLGameObject(pParams)
 {
 	m_velocity.setY(0.01);
-	m_velocity.setX(2);
+	m_velocity.setX(4);
 }
 
 void Score::draw()

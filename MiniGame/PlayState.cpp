@@ -5,7 +5,11 @@
 #include "GameOverState.h"
 #include "GameClearState.h"
 #include "Score.h"
-#include "Enemy1.h"
+#include "Obstacle.h"
+#include "Obstacle1.h"
+#include "Obstacle2.h"
+#include "Obstacle3.h"
+#include "Back.h"
 
 const std::string PlayState::s_playID = "PLAY";
 
@@ -46,17 +50,23 @@ void PlayState::update()
 		m_gameObjects[i]->update();
 	}
 	if (checkCollision(
-		dynamic_cast<SDLGameObject*>(m_gameObjects[0]),
-		dynamic_cast<SDLGameObject*>(m_gameObjects[1]))||checkCollision(
-			dynamic_cast<SDLGameObject*>(m_gameObjects[0]),
-			dynamic_cast<SDLGameObject*>(m_gameObjects[3])))
+		dynamic_cast<SDLGameObject*>(m_gameObjects[1]),
+		dynamic_cast<SDLGameObject*>(m_gameObjects[2]))||checkCollision(
+			dynamic_cast<SDLGameObject*>(m_gameObjects[1]),
+			dynamic_cast<SDLGameObject*>(m_gameObjects[4]))|| checkCollision(
+				dynamic_cast<SDLGameObject*>(m_gameObjects[1]),
+				dynamic_cast<SDLGameObject*>(m_gameObjects[5])) || checkCollision(
+					dynamic_cast<SDLGameObject*>(m_gameObjects[1]),
+					dynamic_cast<SDLGameObject*>(m_gameObjects[6]))|| checkCollision(
+						dynamic_cast<SDLGameObject*>(m_gameObjects[1]),
+						dynamic_cast<SDLGameObject*>(m_gameObjects[7])))
 	{
 		TheGame::Instance()->getStateMachine()->changeState(new GameOverState());
 		return;
 	}	
 	if (checkCollision(
-		dynamic_cast<SDLGameObject*>(m_gameObjects[0]),
-		dynamic_cast<SDLGameObject*>(m_gameObjects[2])))
+		dynamic_cast<SDLGameObject*>(m_gameObjects[1]),
+		dynamic_cast<SDLGameObject*>(m_gameObjects[3])))
 	{
 		TheGame::Instance()->getStateMachine()->changeState(new GameClearState());
 		return;
@@ -85,8 +95,12 @@ bool PlayState::onEnter()
 		"score", TheGame::Instance()->getRenderer())) {
 		return false;
 	}
-	if (!TheTextureManager::Instance()->load("assets/animate-alpha.png",
-		"animate", TheGame::Instance()->getRenderer())) {
+	if (!TheTextureManager::Instance()->load("assets/Obstacle.png",
+		"obstacle", TheGame::Instance()->getRenderer())) {
+		return false;
+	}
+	if (!TheTextureManager::Instance()->load("assets/background.png",
+		"background", TheGame::Instance()->getRenderer())) {
 		return false;
 	}
 	GameObject* player = new Player(
@@ -95,12 +109,24 @@ bool PlayState::onEnter()
 		new LoaderParams(100, 100, 128, 55, "helicopter2"));
 	GameObject* score = new Score(
 		new LoaderParams(200, 200, 35, 35, "score"));
-	GameObject* enemy1 = new Enemy1(
-		new LoaderParams(100, 100, 128, 82, "animate"));
+	GameObject* obstacle = new Obstacle(
+		new LoaderParams(100, 100, 70, 70, "obstacle"));
+	GameObject* obstacle1 = new Obstacle1(
+		new LoaderParams(300, 300, 70, 70, "obstacle"));
+	GameObject* obstacle2 = new Obstacle2(
+		new LoaderParams(200, 200, 70, 70, "obstacle"));
+	GameObject* obstacle3 = new Obstacle3(
+		new LoaderParams(400, 400, 70, 70, "obstacle"));
+	GameObject* background = new Back(
+		new LoaderParams(0, 0, 640, 480, "background"));
+	m_gameObjects.push_back(background);
 	m_gameObjects.push_back(player);
 	m_gameObjects.push_back(enemy);
 	m_gameObjects.push_back(score);
-	m_gameObjects.push_back(enemy1);
+	m_gameObjects.push_back(obstacle);
+	m_gameObjects.push_back(obstacle1);
+	m_gameObjects.push_back(obstacle2);
+	m_gameObjects.push_back(obstacle3);
 	std::cout << "entering PlayState\n";
 	return true;
 }
