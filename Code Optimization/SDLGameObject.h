@@ -1,0 +1,30 @@
+#pragma once
+#include "SDL.h"
+#include "LoaderParams.h"
+#include <iostream>
+#include "TextureManager.h"
+#include "Vector2D.h"
+
+class SDLGameObject
+{
+public:
+	SDLGameObject(const LoaderParams* pParams);
+	virtual void draw();
+	virtual void update();
+	virtual void clean();
+
+	Vector2D& getPosition() { return m_position; }
+	int getWidth() { return m_width; }
+	int getHeight() { return m_height; }
+	int m_numFrames = 2;
+protected:
+	Vector2D m_position;
+	Vector2D m_velocity;
+	Vector2D m_acceleration;
+
+	int m_width;
+	int m_height;
+	int m_currentRow;
+	int m_currentFrame;
+	std::string m_textureID;
+};
