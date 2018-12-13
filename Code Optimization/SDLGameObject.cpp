@@ -13,14 +13,6 @@ SDLGameObject::SDLGameObject(const LoaderParams* pParams) :
 	m_currentFrame = 1;
 }
 
-//void SDLGameObject::draw()
-//{
-//	TextureManager::Instance()->drawFrame(m_textureID,
-//		(int)m_position.getX(), (int)m_position.getY(),
-//		m_width, m_height, m_currentRow, m_currentFrame,
-//		TheGame::Instance()->getRenderer());
-//}
-
 void SDLGameObject::update()
 {
 	m_velocity += m_acceleration;

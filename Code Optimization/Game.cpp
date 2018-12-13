@@ -20,12 +20,6 @@ bool Game::init(const char* title, int xpos, int ypos,
 
 		m_bRunning = true;
 
-		//if (!TheTextureManager::Instance()->load("Assets/animate-alpha.png", "animate", m_pRenderer))
-		//{
-		//	return false;
-		//}
-		//m_SDLGameObjects.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
-		//m_SDLGameObjects.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
 	}
 	else {
 		return false; // sdl could not initialize
