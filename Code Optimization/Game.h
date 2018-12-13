@@ -53,8 +53,8 @@ private:
 
 	std::vector<SDLGameObject*> m_SDLGameObjects;
 
-	SDLGameObject* m_player;
-	SDLGameObject* m_enemy;
+	//SDLGameObject* m_player;
+	//SDLGameObject* m_enemy;
 
 	GameStateMachine* m_pGameStateMachine;
 

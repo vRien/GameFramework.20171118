@@ -17,7 +17,6 @@ class InputHandler
 public:
 
 	void update();
-	void clean();  // 디바이스 관련 초기화된 부분을 clear
 	void reset();
 
 	bool isKeyDown(SDL_Scancode key);

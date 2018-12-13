@@ -16,9 +16,9 @@ InputHandler::InputHandler()
 
 }
 
-void InputHandler::clean()
-{
-}
+//void InputHandler::clean()
+//{
+//}
 
 void InputHandler::reset()
 {}

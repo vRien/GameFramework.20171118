@@ -24,8 +24,6 @@ void TextureManager::draw(std::string id,
 	int x, int y, int width, int height,
 	SDL_Renderer* pRenderer, SDL_RendererFlip flip)
 {
-	SDL_Rect srcRect;
-	SDL_Rect destRect;
 	srcRect.x = 0;
 	srcRect.y = 0;
 	srcRect.w = destRect.w = width;
@@ -39,8 +37,6 @@ void TextureManager::drawFrame(std::string id, int x, int y,
 	int width, int height, int currentRow, int currentFrame,
 	SDL_Renderer* pRenderer, SDL_RendererFlip flip)
 {
-	SDL_Rect srcRect;
-	SDL_Rect destRect;
 	srcRect.x = width * currentFrame;
 	srcRect.y = height * (currentRow - 1);
 	srcRect.w = destRect.w = width;

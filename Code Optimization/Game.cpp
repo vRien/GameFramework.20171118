@@ -59,7 +59,7 @@ void Game::clean()
 	SDL_DestroyRenderer(m_pRenderer);
 	SDL_Quit();
 
-	TheInputHandler::Instance()->clean();
+	TheGame::Instance()->clean();
 }
 
 void Game::handleEvents()

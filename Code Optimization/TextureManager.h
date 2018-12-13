@@ -7,6 +7,8 @@ private:
 	static TextureManager* s_pInstance;
 	TextureManager() { ; }
 
+	SDL_Rect srcRect;
+	SDL_Rect destRect;
 public:
 	~TextureManager() { ; }
 
